@@ -4,7 +4,7 @@ services:
   nginx:
     image: nginx:alpine
     ports:
-      - "80:80"
+      - "8081:80"
     volumes:
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
     depends_on:
@@ -25,7 +25,7 @@ services:
   backend:
     image: asanalii/ayirbasta-backend:latest
     environment:
-      - MONGO_URI=mongodb+srv://...
+      - MONGO_URI=mongodb+srv://testa:asan1234@test.wr2lcrn.mongodb.net/?retryWrites=true&w=majority&appName=test&tls=true&tlsAllowInvalidCertificates=true
     networks:
       - app-net
     deploy:
