@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   frontend:
-    build: ./frontend
+    image: asanalii/ayirbasta-frontend:latest
     volumes:
       - frontend-dist:/app/build
     networks:
