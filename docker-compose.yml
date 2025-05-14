@@ -1,20 +1,13 @@
 version: "3.8"
 
 services:
-  frontend:
-    image: asanalii/ayirbasta-frontend:latest
-    volumes:
-      - frontend-dist:/app/build
-    networks:
-      - app-net
-
   nginx:
     image: nginx:alpine
+
     ports:
       - "8081:80"
     volumes:
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
-      - frontend-dist:/usr/share/nginx/html:ro
     depends_on:
       - frontend
       - backend
@@ -22,6 +15,13 @@ services:
       - app-net
     deploy:
       replicas: 1
+
+  frontend:
+    image: asanalii/ayirbasta-frontend:latest
+    # volumes:
+    # - frontend-dist:/app/build
+    networks:
+      - app-net
 
   backend:
     image: asanalii/ayirbasta-backend:latest
