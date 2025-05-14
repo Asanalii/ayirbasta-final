@@ -22,12 +22,12 @@ jobs:
 
       - name: Build & Push Frontend Image
         run: |
-          docker build -t $FRONTEND_IMAGE:latest ./frontend
+          docker build -t $FRONTEND_IMAGE:latest ./client
           docker push $FRONTEND_IMAGE:latest
 
       - name: Build & Push Backend Image
         run: |
-          docker build -t $BACKEND_IMAGE:latest ./back
+          docker build -t $BACKEND_IMAGE:latest ./ayirbasta_back_node
           docker push $BACKEND_IMAGE:latest
 
       - name: Deploy to Swarm Server via SSH
