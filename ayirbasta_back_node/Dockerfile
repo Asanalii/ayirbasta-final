@@ -4,20 +4,20 @@ FROM node:20-alpine
 # Set working directory
 WORKDIR /app
 
-# Copy package.json and package-lock.json
+# Copy dependency files
 COPY package*.json ./
 
-# Install dependencies
-RUN npm install --production
+# Install dependencies safely (avoids peer conflict issues)
+RUN npm install --legacy-peer-deps --production
 
-# Copy the rest of the application code
+# Copy the rest of the code
 COPY . .
 
-# Set environment variable (optional, default handled in .env)
+# Set environment variables (optional)
 ENV PORT=8080
 
-# Expose the port your app runs on
+# Expose backend port
 EXPOSE 8080
 
-# Start the app
+# Start the server
 CMD ["node", "server.js"]
