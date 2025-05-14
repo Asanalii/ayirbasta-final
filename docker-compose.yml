@@ -14,7 +14,7 @@ services:
   #     - app-net
   #   deploy:
   #     replicas: 1
-
+  #
   frontend:
     image: asanalii/ayirbasta-frontend:latest
     ports:
