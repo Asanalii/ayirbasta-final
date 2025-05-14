@@ -22,6 +22,8 @@ services:
     # - frontend-dist:/app/build
     networks:
       - app-net
+    deploy:
+      replicas: 1
 
   backend:
     image: asanalii/ayirbasta-backend:latest
