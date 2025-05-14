@@ -1,0 +1,40 @@
+name: CI/CD Deployment Ayirbasta
+
+on:
+  push:
+    branches:
+      - master
+
+env:
+  FRONTEND_IMAGE: asanalii/ayirbasta-frontend
+  BACKEND_IMAGE: asanalii/ayirbasta-backend
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Login to Docker Hub
+        run: echo "${{ secrets.DOCKERHUB_PASSWORD }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
+
+      - name: Build & Push Frontend Image
+        run: |
+          docker build -t $FRONTEND_IMAGE:latest ./frontend
+          docker push $FRONTEND_IMAGE:latest
+
+      - name: Build & Push Backend Image
+        run: |
+          docker build -t $BACKEND_IMAGE:latest ./back
+          docker push $BACKEND_IMAGE:latest
+
+      - name: Deploy to Swarm Server via SSH
+        uses: appleboy/ssh-action@v1.0.0
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: root
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            cd ~/deploy/blog-docker && git pull origin master && docker stack deploy -c docker-compose.yml blogapp

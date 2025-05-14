@@ -1,0 +1,151 @@
+.products-and-service {
+  // width: 1320px;
+  margin-top: 37px;
+  margin-left: 60px;
+}
+
+.products-and-service-title {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 44px;
+
+  & p {
+    color: #2d2d2d;
+  }
+}
+
+.products-and-service-filter-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+  width: 1320px;
+  height: 44px;
+  margin-top: 30px;
+}
+
+.products-and-service-search-bar {
+  & input {
+    width: 315px;
+    height: 44px;
+    padding-left: 64px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    background: #ffffff;
+    border: 1px solid rgba(195, 212, 233, 0.4);
+    border-radius: 70px;
+
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 150%;
+  }
+
+  ::placeholder {
+    color: #596780;
+    width: 166px;
+    height: 23px;
+  }
+
+  & img {
+    position: absolute;
+    pointer-events: none;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.products-and-service-selecting-button {
+  position: relative;
+  & select {
+    appearance: none;
+    width: 315px;
+    height: 44px;
+    padding-left: 64px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    background: #ffffff;
+    border: 1px solid rgba(195, 212, 233, 0.4);
+    border-radius: 70px;
+
+    font-family: "Plus Jakarta Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 150%;
+    color: #596780;
+
+    & option {
+      color: #596780;
+      font-family: "Plus Jakarta Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 19px;
+      border: none;
+      display: flex;
+      align-items: center;
+    }
+
+    & option[value=""] {
+      display: none;
+    }
+  }
+
+  & img {
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    pointer-events: none;
+  }
+}
+
+.products-and-service-cards-variants-container {
+  // width: 1320px;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 315px);
+  gap: 20px;
+}
+
+@media (max-width: 1024px) {
+  .products-and-service {
+    margin-left: 20px;
+    width: auto;
+  }
+
+  .products-and-service-filter-container {
+    flex-direction: column;
+    gap: 10px;
+    width: unset;
+    height: unset;
+  }
+
+  .products-and-service-search-bar,
+  .products-and-service-selecting-button {
+    width: 100%;
+  }
+
+  .products-and-service-cards-variants-container {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .products-and-service-title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .pagination button {
+    font-size: 14px;
+  }
+}

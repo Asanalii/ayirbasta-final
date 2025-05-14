@@ -1,0 +1,78 @@
+// .item {
+
+
+//     &__cont {
+//         display: flex;
+//         gap: 30px;
+
+//         &-pics {
+
+
+//             .item__smallPics {
+//                 width: 670px;
+//                 display: flex;
+//                 gap: 10px;
+
+//                 overflow-x: visible;
+//                 overflow-y: hidden;
+
+//                 &::-webkit-scrollbar {
+//                     display: none;
+//                 }
+//             }
+//         }
+
+//         &-main {
+//             font-family: "Plus Jakarta Sans";
+//             font-weight: 400;
+//             color: #596780;
+//             font-size: 20px;
+//             display: flex;
+//             flex-direction: column;
+//             gap: 25px;
+//             background-color: #fff;
+//             border-radius: 20px;
+
+//             padding: 30px;
+
+//             p,
+//             h1 {
+//                 color: #596780;
+//             }
+
+//             .item__info {
+
+//                 h1 {
+//                     font-weight: 700;
+//                     font-size: 25px;
+//                 }
+//             }
+
+//             .item__barter {
+
+//                 &-btn {
+//                     display: flex;
+//                     padding-bottom: 30px;
+//                     gap: 20px;
+//                     .button {
+//                         width: 335px;
+//                         height: 60px;
+//                         background-color: $green;
+//                         border: none;
+//                         font-size: 18px;
+
+//                         &:last-child {
+//                             width: 60px;
+//                             height: 60px;
+//                             border: 1px solid #596780;
+//                             background-color: transparent;
+//                             border-radius: 50%;
+//                         }
+//                     }
+//                 }
+//             }
+
+
+//         }
+//     }
+// }

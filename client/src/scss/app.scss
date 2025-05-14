@@ -1,0 +1,44 @@
+@import "./variables";
+@import "./libs/normalize";
+
+@import "./components/button";
+@import "./components/item";
+@import "./components/offers";
+@import "./components/profileReviews";
+@import "../components/OffersNearby/offersNearby";
+@import "../components/ProductsAndService/products-service";
+@import "../components/CardVariant/cardVariant";
+@import "../components/Map/map";
+
+.wrapper {
+  padding: 30px 60px 30px 70px;
+}
+
+.info-about-mvp {
+  position: sticky;
+  top: 0px;
+  padding: 5px;
+
+  font-size: 15px;
+
+  color: #ffffff;
+  text-align: center;
+  background: red;
+  z-index: 100;
+}
+
+.app {
+  background-color: #f9f9f9;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 30px 30px 30px 20px;
+  }
+}
+
+// @media (max-width: 640px) {
+//   .wrapper {
+//     padding: 10px 40px 10px 50px;
+//   }
+// }

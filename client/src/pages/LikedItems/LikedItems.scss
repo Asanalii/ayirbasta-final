@@ -1,0 +1,16 @@
+.liked-items-container {
+  padding: 20px;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  .items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+}

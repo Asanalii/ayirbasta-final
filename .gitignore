@@ -1,0 +1,8 @@
+ayirbasta_back
+ayirbasta_back/images
+ayirbasta_back_node/node_modules
+ayirbasta_back_node/static
+ayirbasta_back_node/coverage
+ayirbasta_back_node/package-lock.json
+client/node_modules
+client/build

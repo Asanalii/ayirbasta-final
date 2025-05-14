@@ -1,0 +1,16 @@
+@import '../variables';
+
+
+
+.button {
+  display: flex;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  font-family: 'Plus Jakarta Sans';
+  font-weight: 600;
+  color: #FFF;
+}

@@ -1,0 +1,41 @@
+.profileReviews {
+    
+
+    h1 {
+        font-weight: 600;
+        font-size: 35px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    &__cont {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    &__block {
+        display: flex;
+        gap: 20px;
+
+        &-main {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__show {
+        text-align: center;
+        cursor: pointer;
+        
+    }
+}

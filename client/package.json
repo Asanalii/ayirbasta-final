@@ -1,0 +1,66 @@
+{
+  "name": "Ayirbasta",
+  "version": "1.0.0",
+  "engines": {
+    "node": "20.x"
+  },
+  "private": true,
+  "homepage": "http://localhost:3000",
+  "dependencies": {
+    "@googlemaps/react-wrapper": "^1.1.35",
+    "@reach/combobox": "^0.17.0",
+    "@react-google-maps/api": "^2.13.1",
+    "@testing-library/react": "^16.2.0",
+    "axios": "^0.27.2",
+    "jest": "^27.5.1",
+    "jwt-decode": "^3.1.2",
+    "mobx": "^6.6.2",
+    "mobx-react-lite": "^3.4.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-paginate": "^8.1.4",
+    "react-router-dom": "^6.4.0",
+    "react-scripts": "^5.0.1",
+    "reactjs-popup": "^2.0.5",
+    "sass": "^1.54.5",
+    "styled-components": "^5.3.5"
+  },
+  "scripts": {
+    "dev": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "jest": "jest --coverage",
+    "eject": "react-scripts eject"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!src/index.js",
+      "!src/reportWebVitals.js",
+      "!**/node_modules/**",
+      "!**/tests/**"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.3",
+    "eslint": "^8.23.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-no-relative-import-paths": "^1.4.0",
+    "eslint-plugin-react": "^7.31.1",
+    "eslint-plugin-react-hooks": "^4.6.0"
+  }
+}

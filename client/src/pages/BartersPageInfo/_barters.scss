@@ -1,0 +1,278 @@
+.settings-page {
+  display: flex;
+
+  & .barters-card {
+    width: 1040px;
+    background: #ffffff;
+    border-radius: 20px;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .barters-card-content {
+    display: flex;
+    flex-direction: row;
+    padding: 30px 90px;
+    // gap: 80px;
+    align-items: flex-start;
+  }
+
+  .barters-card-one {
+    display: flex;
+    flex-direction: column;
+    // margin-top: 30px;
+    // margin-left: 90px;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .barters-card-two {
+    display: flex;
+    flex-direction: column;
+    // margin-top: 30px;
+    // margin-left: 90px;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .barters-card-profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 17px;
+  }
+
+  .barters-card-profile-text-section {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .barters-card-name {
+    font-family: "Plus Jakarta Sans";
+    font-weight: 500;
+    font-size: 23px;
+    color: #2d2d2d;
+  }
+
+  .barters-card-profile-text {
+    font-family: "Plus Jakarta Sans";
+    font-weight: 400;
+    font-size: 18px;
+    color: #596780;
+  }
+
+  .barters-card-cart {
+    width: 315px;
+    height: 380px;
+    background: #f9f9f9;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .barters-card-cart-image {
+    border-radius: 25px 25px 0px 0px;
+  }
+
+  .barters-card-cart-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: visible;
+
+    max-height: 80px;
+
+    &:first-child {
+      font-weight: 700;
+    }
+  }
+
+  .barters-card-cart-text-section {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+  }
+
+  .barters-card-cart-category {
+    font-weight: 400;
+    font-size: 14px;
+    color: #596780;
+  }
+
+  .barters-card-cart-link {
+    margin-top: auto;
+    padding-bottom: 10px;
+    align-self: center;
+  }
+
+  .barters-card-cart-button {
+    background: #de8807;
+    border: 0px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 15px;
+    display: flex;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    width: 253px;
+  }
+
+  .barters-card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .barters-card-info-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23px;
+    color: #596780;
+  }
+
+  .barters-card-info-text {
+    font-weight: 400;
+    font-size: 20px;
+    color: #596780;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  .barters-card-info-status {
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 29px;
+
+    color: #16ab19;
+  }
+
+  .decline {
+    color: #e93c3c;
+  }
+
+  .not-accepted {
+    color: #de8807;
+  }
+
+  .barters-card-switch {
+    padding: 21px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    border: 0px;
+    width: 70px;
+    height: 70px;
+    margin-right: 80px;
+    margin-left: 80px;
+    margin-top: 310px;
+  }
+
+  .barters-card-cart-nav {
+    display: flex;
+    gap: 10px;
+  }
+
+  .barters-card-cart-nav-circle {
+    width: 14px;
+    height: 14px;
+    border-radius: 50px;
+    border: 1px solid #596780;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .filled {
+    background: #596780;
+  }
+
+  .margin25 {
+    margin-top: 25px;
+  }
+
+  .margin20 {
+    margin-top: 20px;
+  }
+
+  .margin10 {
+    margin-top: 10px;
+  }
+
+  .barters-buttons-row {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    padding-bottom: 20px;
+  }
+
+  .green-button {
+    background-color: #16ab19;
+  }
+
+  .red-button {
+    background-color: #e93c3c;
+  }
+}
+
+// Media query for screens up to 768px
+@media (max-width: 768px) {
+  .settings-page {
+    flex-direction: column; // Stack elements vertically
+    // align-items: center; // Center align items
+  }
+
+  .settings-page .barters-card {
+    width: unset; // Full width for cards on smaller screens
+    margin: 20px 0; // Adjust margin for better spacing
+  }
+
+  .settings-page .barters-card-content {
+    padding: 20px; // Reduce padding for smaller screens
+    flex-direction: column; // Stack content vertically
+  }
+
+  .settings-page .barters-card-profile {
+    flex-direction: column; // Stack profile items vertically
+    align-items: center; // Center align profile items
+  }
+
+  .settings-page .barters-card-cart {
+    width: 100%; // Full width for cart on smaller screens
+    height: auto; // Allow height to adjust
+  }
+
+  .settings-page .barters-card-cart-name {
+    font-size: 14px; // Reduce font size for smaller screens
+  }
+
+  .settings-page .barters-card-info-title {
+    font-size: 20px; // Reduce title size
+  }
+
+  .settings-page .barters-card-info-text {
+    font-size: 16px; // Reduce text size
+  }
+
+  .settings-page .barters-card-info-status {
+    font-size: 20px; // Reduce status size
+  }
+
+  .settings-page .barters-card-switch {
+    align-self: center;
+    margin: 20px 0; // Adjust margin for better spacing
+  }
+
+  .settings-page .barters-buttons-row {
+    flex-direction: column; // Stack buttons vertically
+    gap: 10px; // Reduce gap between buttons
+  }
+}

@@ -1,0 +1,172 @@
+.offers-nearby {
+    width: 1320px;
+    height: 768px;
+    margin-top: 40px;
+    margin-left: 60px;
+}
+
+.offers-nearby-title {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 44px;
+
+    height: 44px;
+    width: 234px;
+    border-radius: nullpx;
+
+    margin-bottom: 24px;
+
+    & p {
+        color: #2D2D2D;
+    }
+}
+
+.map-and-block-container {
+    display: flex;
+
+}
+
+.map-pic-geo {
+    width: 900px;
+    height: 700px;
+    border-radius: 20px;
+}
+
+.right-block {
+    width: 400px;
+    height: 433px;
+    margin-left: 20px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-block-header {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 32px;
+
+    & p {
+        color: #2D2D2D;
+    }
+
+    width: 360px;
+    height: 64px;
+
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.right-block-filter-container {
+    width: 360px;
+    height: 172px;
+    margin-top: 30px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+}
+
+.search-bar {
+    & input {
+        width: 360px;
+        height: 44px;
+        border: 1px solid rgba(195, 212, 233, 0.4);
+        border-radius: 70px;
+        background: #FFFFFF;
+        padding-left: 64px;
+
+        font-family: 'Plus Jakarta Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 19px;
+    }
+
+    ::placeholder {
+        color: #596780;
+        width: 166px;
+        height: 19px;
+    }
+
+    & img {
+        position: absolute;
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        pointer-events: none;
+    }
+}
+
+.selecting-button {
+    & select {
+        appearance: none;
+
+        width: 360px;
+        height: 44px;
+        border: 1px solid rgba(195, 212, 233, 0.4);
+        border-radius: 70px;
+        background: #FFFFFF;
+        padding-left: 64px;
+        // padding: 12px 130px 13px 64px;
+
+        font-family: 'Plus Jakarta Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 19px;
+        color: #596780;
+
+        & option {
+            color: #596780;
+            font-family: 'Plus Jakarta Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 19px;
+
+            display: flex;
+            align-items: center;
+        }
+
+        & option[value=""] {
+            display: none;
+        }
+    }
+
+    & img {
+        position: absolute;
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        pointer-events: none;
+    }
+}
+
+.right-block-or-title {
+    width: 23px;
+    height: 19px;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+    margin-top: 22px;
+    margin-left: 189px;
+
+    & p {
+        color: #596780;
+    }
+}
+
+.right-block-add-barter-button {
+    margin-left: 74px;
+    margin-top: 22px;
+}
