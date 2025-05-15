@@ -70,7 +70,10 @@ function Item({ product }) {
           <div className="item__cont">
             <div className="item__cont-pics">
               <div className="item__pic">
-                <img alt="" src={`http://localhost:8080${product.image}`} />
+                <img
+                  alt=""
+                  src={`http://64.226.119.110:8081${product.image}`}
+                />
               </div>
               {/* <div className="item__smallPics">
               {item.smallPics.map((pic) => (
@@ -145,7 +148,7 @@ function Item({ product }) {
                                               }}
                                             >
                                               <img
-                                                src={`http://localhost:8080${offer.image}`}
+                                                src={`http://64.226.119.110:8081${offer.image}`}
                                                 alt=""
                                               />
                                               <div>

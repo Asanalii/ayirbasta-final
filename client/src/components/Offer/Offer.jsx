@@ -26,7 +26,7 @@ export const Offer = (props) => {
   };
 
   const encodedImage = image
-    ? encodeURI(`http://localhost:8080${image}`)
+    ? encodeURI(`http://64.226.119.110:8081${image}`)
     : null;
 
   return (

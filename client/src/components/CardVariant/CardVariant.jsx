@@ -43,7 +43,7 @@ const CardVariant = ({
     <div className="products-and-service-cards-variant">
       {isRecommended && <div className="recommendation-badge">Recommended</div>}
       <img
-        src={"http://localhost:8080" + image}
+        src={"http://64.226.119.110:8081" + image}
         alt={serviceName}
         className="cards-variant-image-product"
       />

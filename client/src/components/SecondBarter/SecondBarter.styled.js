@@ -10,7 +10,9 @@ export default styled.div`
   & .image-cont {
     height: 150px;
     background: ${(props) =>
-      props.image ? `url(http://localhost:8080${props.image})` : "#f5f5f5"};
+      props.image
+        ? `url(http://64.226.119.110:8081${props.image})`
+        : "#f5f5f5"};
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

@@ -88,7 +88,7 @@ const EditProduct = () => {
 
                   <div>
                     <img
-                      src={`http://localhost:8080${product.image}`}
+                      src={`http://64.226.119.110:8081${product.image}`}
                       alt=""
                       style={{ height: "300px" }}
                     />

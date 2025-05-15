@@ -126,7 +126,7 @@ function BartersPage(props) {
                 <div className="barters-card-cart">
                   <img
                     style={{ width: "315px", height: "150px" }}
-                    src={`http://localhost:8080${giveProduct.image}`}
+                    src={`http://64.226.119.110:8081${giveProduct.image}`}
                     className="barters-card-cart-image"
                   />
                   <div className="barters-card-cart-text-section">
@@ -196,7 +196,7 @@ function BartersPage(props) {
                 <div className="barters-card-cart ">
                   <img
                     // src={wantProduct.image}
-                    src={`http://localhost:8080${wantProduct.image}`}
+                    src={`http://64.226.119.110:8081${wantProduct.image}`}
                     style={{ width: "315px", height: "150px" }}
                     className="barters-card-cart-image"
                   />
